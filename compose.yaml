@@ -8,10 +8,10 @@ services:
     volumes:
       - ./:/app
     environment:
-      MYSQL_HOST: mysql
-      MYSQL_USER: root
-      MYSQL_PASSWORD: secret
-      MYSQL_DB: todos
+      MYSQL_HOST: "todo-db.cncwec8ksa3n.ap-southeast-1.rds.amazonaws.com"
+      MYSQL_USER: "admin"
+      MYSQL_PASSWORD: "admin168"
+      MYSQL_DB: "todo-db"
 
   mysql:
     image: mysql:8.0
